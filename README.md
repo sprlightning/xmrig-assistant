@@ -11,6 +11,10 @@ GaiaXmrig is responsible for enabling xmrig and maintaining dropped processes; H
 We need to put GaiaXmrig, HadesXmrig, xmrig, config.json together, add GaiaXmrig as the startup option, and restart the computer to automatically mine.
 Due to the best performance of xmrig in administrator mode, GaiaXmrig also runs in administrator mode, which requires turning off UAC.
 
+这适用于矿池连接失败导致的掉算力，思路是实时检测CPU占用率，如30%设为阈值，低于该值认为掉算力，间隔10分钟重复检测3次，一旦检测到恢复算力，就跳过，否则第三次时会关掉xmrig。
+
+This applies to the drop in computing power caused by mining pool connection failure. The idea is to detect CPU usage in real-time, such as setting a threshold of 30%. If the threshold is lower than this value, it is considered drop in computing power. Repeat the detection three times every 10 minutes. Once the restored computing power is detected, skip it, otherwise xmrig will be turned off on the third time.
+
 对了，GaiaXmrig是在后台开启xmrig和HadesXmrig的，所以如果安装了杀毒软件，请将其添加到白名单。
 
 By the way, GaiaXmrig and HadesXmrig are enabled in the background, so if antivirus software is installed, please add it to the whitelist.
