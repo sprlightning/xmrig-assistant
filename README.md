@@ -11,6 +11,10 @@ GaiaXmrig is responsible for enabling xmrig and maintaining dropped processes; H
 We need to put GaiaXmrig, HadesXmrig, xmrig, config.json together, add GaiaXmrig as the startup option, and restart the computer to automatically mine.
 Due to the best performance of xmrig in administrator mode, GaiaXmrig also runs in administrator mode, which requires turning off UAC.
 
+对了，GaiaXmrig是在后台开启xmrig和HadesXmrig的，所以如果安装了杀毒软件，请将其添加到白名单。
+
+By the way, GaiaXmrig and HadesXmrig are enabled in the background, so if antivirus software is installed, please add it to the whitelist.
+
 如搬运请标明出处，不得用于非法用途！
 唯一来源：https://github.com/sprlightning/xmrig-assistant
 
